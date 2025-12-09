@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CK_mapper</string>
+    <string name="btn_dpad_up">UP</string>
+    <string name="btn_dpad_right">UP</string>
+    <string name="btn_dpad_down">UP</string>
+    <string name="btn_dpad_left">UP</string>
+</resources>
