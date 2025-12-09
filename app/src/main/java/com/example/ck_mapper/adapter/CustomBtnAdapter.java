@@ -35,11 +35,14 @@ public class CustomBtnAdapter extends RecyclerView.Adapter<CustomBtnAdapter.View
     @Override
     public void onBindViewHolder(@NonNull CustomBtnAdapter.ViewHolder holder, int position) {
          Custom_btn_model item = buttonList.get(position);
+
+         holder.icon.setImageResource(item.getImageIcon());
+         holder.text.setText(item.getBtn_name());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return buttonList.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
