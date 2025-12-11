@@ -11,16 +11,18 @@
         android:id="@+id/btnIcon"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@null"
+        android:background="@drawable/border"
+        android:padding="16dp"
+        android:contentDescription="@string/app_name"
         android:src="@drawable/directional_btn"
-        android:rotation="270" />
+        android:rotation="270"/>
 
     <TextView
         android:id="@+id/btnText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:gravity="center_vertical"
-        android:text="Default" />
+        android:gravity="center"
+        android:text="@string/app_name" />
 
 </LinearLayout>
