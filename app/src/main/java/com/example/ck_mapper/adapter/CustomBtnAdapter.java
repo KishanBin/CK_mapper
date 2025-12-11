@@ -37,6 +37,7 @@ public class CustomBtnAdapter extends RecyclerView.Adapter<CustomBtnAdapter.View
          Custom_btn_model item = buttonList.get(position);
 
          holder.icon.setImageResource(item.getImageIcon());
+         holder.icon.setRotation(item.getRotation());
          holder.text.setText(item.getBtn_name());
     }
 
@@ -51,7 +52,6 @@ public class CustomBtnAdapter extends RecyclerView.Adapter<CustomBtnAdapter.View
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             icon = itemView.findViewById(R.id.btnIcon);
             text = itemView.findViewById(R.id.btnText);
         }
